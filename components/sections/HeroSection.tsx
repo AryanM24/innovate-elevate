@@ -40,7 +40,7 @@ const HeroSection: React.FC = () => {
           <div className="flex-1 relative w-full">
             <div className="relative h-[400px] md:h-[500px] lg:h-[600px] animate-float">
               <Image
-                src="/placeholder.svg"
+                src="https://assets.entrepreneur.com/content/3x2/2000/20171017194429-shutterstock-370390046-crop.jpeg"
                 alt="Young innovators collaborating"
                 fill
                 className="object-cover rounded-2xl shadow-2xl hover:shadow-primary/20 transition-shadow duration-300"

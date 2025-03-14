@@ -15,9 +15,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
-            <LightbulbIcon className="h-4 w-4 text-primary-foreground" />
-          </div>
+            <img src="/logo.png" alt="Logo" className="w-8 h-8 rounded-full" />
           <span className="font-bold text-lg">Innovate & Elevate</span>
         </Link>
 

@@ -11,7 +11,7 @@ const SuccessStoriesSection: React.FC = () => {
 
       <div className="container relative px-4 mx-auto">
         <div className="text-center mb-12 space-y-6 animate-fade-in">
-          <div className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-primary/15 text-primary border border-primary/20">
+          <div className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-primary/25 text-primary/90 border border-primary/30 backdrop-blur-sm">
             <span className="text-sm font-semibold">Success Stories</span>
             <ArrowRightIcon className="h-4 w-4" />
           </div>

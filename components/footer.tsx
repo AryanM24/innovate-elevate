@@ -8,9 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
-                <LightbulbIcon className="h-4 w-4 text-primary-foreground" />
-              </div>
+              <img src="/logo.png" alt="Logo" className="w-8 h-8 rounded-full" />
               <span className="font-bold text-lg">Innovate & Elevate</span>
             </Link>
             <p className="text-muted-foreground">

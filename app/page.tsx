@@ -10,42 +10,31 @@ import SponsorsSection from "@/components/sections/SponsorsSection";
 import GetInvolvedSection from "@/components/sections/GetInvolvedSection";
 import { Socials } from "@/components/sections/Socials"
 
+const sections = [
+  { Component: HeroSection, delay: "0" },
+  { Component: MissionSection, delay: "100" },
+  { Component: ProgramsSection, delay: "200" },
+  { Component: EventsSection, delay: "300" },
+  { Component: SuccessStoriesSection, delay: "400" },
+  { Component: SponsorsSection, delay: "500" },
+  { Component: GetInvolvedSection, delay: "600" },
+  { Component: Socials, delay: "700" }
+];
+
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       <Navbar />
       <main className="flex-1">
-        <div className="animate-fade-up">
-          <HeroSection />
-        </div>
-
-        <div className="animate-fade-up">
-          <MissionSection />
-        </div>
-
-        <div className="animate-fade-up">
-          <ProgramsSection />
-        </div>
-
-        <div className="animate-fade-up">
-          <EventsSection />
-        </div>
-
-        <div className="animate-fade-up">
-          <SuccessStoriesSection />
-        </div>
-
-        <div className="animate-fade-up">
-          <SponsorsSection />
-        </div>
-
-        <div className="animate-fade-up">
-          <GetInvolvedSection />
-        </div>
-
-        <div className="animate-fade-up">
-          <Socials />
-        </div>
+        {sections.map(({ Component, delay }, index) => (
+          <div 
+            key={index}
+            className="animate-fade-up opacity-0"
+            style={{ animationDelay: `${delay}ms` }}
+          >
+            <Component />
+          </div>
+        ))}
       </main>
       <Footer />
     </div>
